@@ -1,0 +1,26 @@
+.profile-card{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+}
+.profile-image{
+    width: 100%;
+    height: auto;
+}
+.user-info{
+    
+    position: absolute;
+    background: rgb(5, 5, 5, 0.6 );
+  bottom: -245px;
+    width: 300px;
+    color: white;
+
+  text-align: center;
+   
+}
+.user-name{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+    margin-top: 3px;
+}
