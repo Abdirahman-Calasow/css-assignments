@@ -1,0 +1,16 @@
+.media-player{
+    display: flex;
+    width: 300px;
+  
+   
+
+}
+.control-button  {
+
+  flex: 1;
+ margin: 6px;
+}
+.play{
+    flex: 2;
+    background-color: green;
+}
