@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+
+/* Header Styling */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.header h1 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Content Area - Two Column Layout */
+.content-area {
+    display: flex;
+    flex: 1; /* Expands to fill available vertical space */
+    background-color: #f4f4f4;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Post Card Layout */
+.post-card {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.post-card h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.post-meta {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.post-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.post-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    flex: 1;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .content-area {
+        flex-direction: column;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
