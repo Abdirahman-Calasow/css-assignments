@@ -1,0 +1,113 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  padding: 1.5rem;
+  background-color: #f4f4f9;
+}
+
+
+.profile-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card Styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* Responsive Image */
+.card img {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Content Styling */
+.card .info h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card .info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.card .info a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.card .info a:hover {
+  background-color: #0056b3;
+}
+
+/* --- Breakpoints & Media Queries --- */
+
+/* Tablets (2 columns layout & row alignment inside card) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .profile-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    flex-direction: row;
+    text-align: left;
+    padding: 1.25rem;
+  }
+
+  .card img {
+    margin-bottom: 0;
+    margin-right: 1.25rem;
+    max-width: 120px;
+    height: 120px;
+  }
+}
+
+/* Desktops (3 columns layout) */
+@media screen and (min-width: 1025px) {
+  .profile-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .card img {
+    max-width: 140px;
+    height: 140px;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+}
